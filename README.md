@@ -9,18 +9,24 @@ https://github.com/jonasschmedtmann/advanced-css-course
 
 ## Install npm
 
+```
 cd <projectRoot>
 npm init
 npm install node-sass --save-dev
+```
 
 ## run
 
+```
 npm run compile:sass
+```
 
 ## install live server (global)
 
+```
 sudo npm install live-server -g
 live-server
+```
 
 now make a change, page should refresh
 
