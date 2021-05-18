@@ -30,6 +30,25 @@ live-server
 
 now make a change, page should refresh
 
+## install in Docker container
+
+start Ubuntu container
+
+```
+docker run -it ubuntu:latest /bin/bash
+```
+
+install and run
+
+```
+ apt-get update
+ apt-get install npm git
+ git clone https://github.com/jvermeir/advanced-css-course
+ cd advanced-css-course/Natours/starter/
+ npm install
+ npm run compile:sass
+```
+
 -------
 
 
