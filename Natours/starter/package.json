@@ -5,12 +5,21 @@
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w",
-    "build:sass": "node-sass sass/main.scss css/style.css"
+    "build:sass": "node-sass sass/main.scss css/style.css",
+    "lint:scss": "stylelint sass/**/*.scss",
+    "test": "npm run lint:css"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^6.0.0"
+    "node-sass": "^6.0.0",
+    "prettier": "2.3.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-no-unsupported-browser-features": "^4.1.4",
+    "stylelint-prettier": "^1.2.0"
+  }
 }
