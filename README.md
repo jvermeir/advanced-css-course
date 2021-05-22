@@ -28,6 +28,8 @@ sudo npm install live-server -g
 live-server
 ```
 
+url: `http://127.0.0.1:8080`
+
 now make a change, page should refresh
 
 ## install in Docker container
