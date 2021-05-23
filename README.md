@@ -37,6 +37,13 @@ now make a change, page should refresh
 https://easings.net/
 https://cubic-bezier.com/
 
+## autocomplete with Emmet
+
+type: 
+
+.name_of_the_div => creates a div -> .my__div => <div class="my__div"></div>
+section.section-name => creates a section -> h2.heading-secondary -> <h2 class="heading-secondar"></h2> 
+
 # Original page content below
 
 ## install in Docker container
