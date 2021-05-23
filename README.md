@@ -34,8 +34,14 @@ now make a change, page should refresh
 
 ## stuff 
 
-https://easings.net/
-https://cubic-bezier.com/
+bezier calculations:
+
+    https://easings.net/
+    https://cubic-bezier.com/
+
+screen sizes:
+    
+    https://gs.statcounter.com/
 
 ## autocomplete with Emmet
 
