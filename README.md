@@ -32,6 +32,13 @@ url: `http://127.0.0.1:8080`
 
 now make a change, page should refresh
 
+## stuff 
+
+https://easings.net/
+https://cubic-bezier.com/
+
+# Original page content below
+
 ## install in Docker container
 
 start Ubuntu container
