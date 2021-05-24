@@ -42,6 +42,7 @@ bezier calculations:
 screen sizes:
     
     https://gs.statcounter.com/
+    https://sizzy.co
 
 ## autocomplete with Emmet
 
