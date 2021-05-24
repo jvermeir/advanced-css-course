@@ -20,7 +20,6 @@
       <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
       <label for="navi-toggle" class="navigation__button">
         <span class="navigation__icon">&nbsp;</span>
-
       </label>
       <div class="navigation__background">&nbsp;</div>
       <nav class="navigation__nav">
@@ -32,10 +31,14 @@
             <a href="#" class="navigation__link"><span>02</span>benefits</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>03</span>Popular tours</a>
+            <a href="#" class="navigation__link"
+              ><span>03</span>Popular tours</a
+            >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>04</span>Popular tours</a>
+            <a href="#" class="navigation__link"
+              ><span>04</span>Popular tours</a
+            >
           </li>
           <li class="navigation__item">
             <a href="#" class="navigation__link"><span>05</span>Book now</a>
@@ -398,7 +401,22 @@
 
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src="img/logo-green-2x.png" alt="full logo" class="footer__logo" />
+        <picture class="footer__logo">
+          <source
+            srcset="
+              img/logo-green-small-1x.png 1x,
+              img/logo-green-small-2x.png 2x
+            "
+            media="(max-width: 37.5em)"
+          />
+          <img
+            srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
+            alt="full logo"
+          />
+        </picture>
+
+        <!-- density swithing only: 
+          <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="full logo" class="footer__logo" /> -->
       </div>
       <div class="row">
         <div class="col-1-of-2">
@@ -440,14 +458,24 @@
     <div class="popup" id="popup">
       <div class="popup__content">
         <div class="popup__left">
-          <img src="img/nat-8.jpg" alt="Tour foto" class="popup__img">
-          <img src="img/nat-9.jpg" alt="Tour foto" class="popup__img">
+          <img src="img/nat-8.jpg" alt="Tour foto" class="popup__img" />
+          <img src="img/nat-9.jpg" alt="Tour foto" class="popup__img" />
         </div>
         <div class="popup__right">
           <a href="#section-tours" class="popup__close">&times;</a>
-          <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
-          <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; please read these terms before booking</h3>
-          <p class="popup__text">lots of text goes herelots navigation this word could be hyphenated. hyphenated. hyphenated. hyphenated. hyphenated. hyphenated. of text goes herelots of text goes herelots of text goes herelots of text goes herelots of text goes herelots of text goes herelots of text goes herelots of text goes here</p>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start booking now
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; please read these terms before booking
+          </h3>
+          <p class="popup__text">
+            lots of text goes herelots navigation this word could be hyphenated.
+            hyphenated. hyphenated. hyphenated. hyphenated. hyphenated. of text
+            goes herelots of text goes herelots of text goes herelots of text
+            goes herelots of text goes herelots of text goes herelots of text
+            goes herelots of text goes here
+          </p>
           <div class="popup__button">
             <a href="#" class="btn btn--green btn--green">Book now</a>
           </div>
