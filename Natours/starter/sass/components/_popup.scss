@@ -10,7 +10,13 @@
   visibility: hidden;
   transition: all 0.3s;
   line-height: 1;
-
+  @supports (
+    (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))
+  ) {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba($color-black, 0.3);
+  }
   &:target {
     opacity: 1;
     visibility: visible;
@@ -51,31 +57,31 @@
     transform: translate(-50%, -50%) scale(0.5);
     transition: all 0.4s;
     @include respond(phone) {
-        display: inline-block;
+      display: inline-block;
     }
   }
 
   &__left {
     width: 33.3333333%;
     display: table-cell;
-    
-    @include respond(phone) {
-        width: 50%;
-        display: inline-block;
-        transform: translateX(50%);
-        padding-top: 3rem;
-    }
-}
 
-&__right {
+    @include respond(phone) {
+      width: 50%;
+      display: inline-block;
+      transform: translateX(50%);
+      padding-top: 3rem;
+    }
+  }
+
+  &__right {
     width: 66.6666667;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
-    
+
     @include respond(phone) {
-        width: 100%;
-        display: inline-block;
+      width: 100%;
+      display: inline-block;
     }
   }
 
@@ -101,6 +107,6 @@
   }
 
   &__button {
-      text-align: center;
+    text-align: center;
   }
 }
