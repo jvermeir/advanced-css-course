@@ -13,6 +13,12 @@ https://github.com/jonasschmedtmann/advanced-css-course
 cd <projectRoot>
 npm init
 npm install node-sass --save-dev
+npm install autoprefixer --save-dev
+npm install postcss-cli --save-dev
+npm install postcss --save-dev
+npm install npm-run-all --save-dev
+
+
 ```
 
 ## run
